@@ -19,4 +19,13 @@ class MemberController extends Controller
     	$data['users']  = $this->mem->get_users();
         return view('pages.show',$data);
     }
+
+    public function create()
+    {
+    	$data = [];
+    	$data = extract($_POST);
+    	// $name = $request->input('name');
+    	// echo $productname = $request->input('name');
+    	var_dump($data);
+    }
 }
