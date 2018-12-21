@@ -8,3 +8,5 @@ git add .
 DATE=`date +%Y-%m-%d`
 git commit -m "$DATE"
 git push origin master
+satheeshdragon.satheesh@gmail.com
+satheeshprogrammer
