@@ -6,4 +6,5 @@ git add .
 git remote add origin remote https://github.com/satheeshdragon/panel_pro.git
 DATE=`date +%Y-%m-%d`
 git commit -m "$DATE"
+git config --global user.name "satheeshdragon.satheesh@gmail.com"
 git push origin master
