@@ -5,8 +5,6 @@ git checkout
 git add .
 DATE=`date +%Y-%m-%d`
 git commit -m "$DATE"
-git config user.email "satheeshdragon.satheesh@gmail.com"
-git config user.name "satheeshdragon.satheesh@gmail.com"
 git push origin master
 git config credential.helper store
 
