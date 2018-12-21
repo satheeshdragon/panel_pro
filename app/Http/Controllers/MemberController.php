@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 use App\Member;
 
@@ -20,12 +19,9 @@ class MemberController extends Controller
         return view('pages.show',$data);
     }
 
-    public function create()
+    public function create(Request $request)
     {
-    	$data = [];
-    	$data = extract($_POST);
-    	// $name = $request->input('name');
-    	// echo $productname = $request->input('name');
-    	var_dump($data);
+    	$name = $request->input('form');
+    	var_dump($name);
     }
 }

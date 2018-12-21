@@ -26,10 +26,10 @@
             @csrf
             <div class="form-group">
                 <label class="control-label">Name</label>
-                <input type="text" class="form-control" name="name" data-validate="required" data-message-required="This is custom message for required field." placeholder="Required Field"> </div>
+                <input type="text" class="form-control" name="form[name]" data-validate="required" data-message-required="This is custom message for required field." placeholder="Required Field"> </div>
             <div class="form-group">
                 <label class="control-label">Email Field</label>
-                <input type="text" class="form-control" name="email" data-validate="email" placeholder="Email Field"> </div>
+                <input type="text" class="form-control" name="form[email]" data-validate="email" placeholder="Email Field"> </div>
             
             <div class="form-group">
                 <button type="submit" class="btn btn-success">Validate</button>

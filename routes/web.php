@@ -21,4 +21,4 @@ Route::get('/show', function () {
 
 Route::resource('members','MemberController');
 
-Route::post('members/create','MemberController@create');
+// Route::post('members/create','MemberController@create');
