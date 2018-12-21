@@ -5,6 +5,7 @@ git checkout
 git add .
 DATE=`date +%Y-%m-%d`
 git commit -m "$DATE"
-expect git push origin master
+git push origin master
+expect
 send "satheeshdragon.satheesh@gmail.com"
 interact
