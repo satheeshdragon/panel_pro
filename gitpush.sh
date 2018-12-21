@@ -6,6 +6,6 @@ git add .
 DATE=`date +%Y-%m-%d`
 git commit -m "$DATE"
 git push origin master
-read -s -p "Password: " password
+read -s -p "Username: satheeshdragon.satheesh@gmail.com"
 #send "satheeshdragon.satheesh@gmail.com"
 #interact
