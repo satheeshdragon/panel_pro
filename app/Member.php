@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     public function get_members(){
-    	$members = DB::table('members')->get()->toArray();
+    	$members = DB::table('members')->crossJoin('users')
+    			   // ->select('user_id')
+    				// ->leftJoin('users')
+    				->get()
+    				->toArray();
     	return $members;
     }
 
