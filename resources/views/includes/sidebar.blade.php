@@ -19,7 +19,7 @@
                 <ul id="main-menu" class="main-menu">
                     <li class="has-sub"> <a href="dashboard/main/index.html"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a>
                         <ul>
-                            <li> <a href="dashboard/main/index.html"><span class="title">Dashboard 1</span></a> </li>
+                            <li> <a href="{{ url('/') }}/members"><span class="title">Members</span></a> </li>
                             <li> <a href="dashboard/main-2/index.html"><span class="title">Dashboard 2</span></a> </li>
                             <li> <a href="dashboard/main-3/index.html"><span class="title">Dashboard 3</span></a> </li>
                             <li class="has-sub"> <a href="skins/black/index.html"><span class="title">Skins</span></a>

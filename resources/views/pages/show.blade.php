@@ -1,6 +1,29 @@
 @extends('layouts.default')
 @section('content')
 
+<h1>INSERTING</h1>
+            <div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="panel-options"> <a href="index.html#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="index.html#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="index.html#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="index.html#" data-rel="close"><i class="entypo-cancel"></i></a> </div>
+    </div>
+    <div class="panel-body">
+        <form action = "{{ url('/') }}/members/create" method = "post">
+            @csrf
+            <div class="form-group">
+                <label class="control-label">Name</label>
+                <input type="text" class="form-control" name="form[name]" data-validate="required" data-message-required="This is custom message for required field." placeholder="Required Field"> </div>
+            <div class="form-group">
+                <label class="control-label">Email Field</label>
+                <input type="text" class="form-control" name="form[email]" data-validate="email" placeholder="Email Field"> </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Validate</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <h1>VIEWING</h1>
          <table class="table table-bordered datatable" id="table-4" style="color: black;">
                 <thead>
@@ -45,31 +68,6 @@
 @if(Session::has('message'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>  
 @endif
-
-<h1>INSERTING</h1>
-            <div class="panel panel-primary">
-    <div class="panel-heading">
-        <div class="panel-options"> <a href="index.html#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="index.html#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="index.html#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="index.html#" data-rel="close"><i class="entypo-cancel"></i></a> </div>
-    </div>
-    <div class="panel-body">
-        <form action = "{{ url('/') }}/members/create" method = "post">
-            @csrf
-            <div class="form-group">
-                <label class="control-label">Name</label>
-                <input type="text" class="form-control" name="form[name]" data-validate="required" data-message-required="This is custom message for required field." placeholder="Required Field"> </div>
-            <div class="form-group">
-                <label class="control-label">Email Field</label>
-                <input type="text" class="form-control" name="form[email]" data-validate="email" placeholder="Email Field"> </div>
-            
-            <div class="form-group">
-                <button type="submit" class="btn btn-success">Validate</button>
-                <button type="reset" class="btn">Reset</button>
-            </div>
-        </form>
-    </div>
-</div>
-
-<a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-default">Show Me</a>
 
 <h1>EDITING</h1>
 
