@@ -6,7 +6,7 @@
 </head>
 
 
-<body class="page-body page-fade" >
+<body class="page-body skin-black" >
 
     <div class="page-container">
 

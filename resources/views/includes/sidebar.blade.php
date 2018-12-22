@@ -19,20 +19,13 @@
                 <ul id="main-menu" class="main-menu">
                     <li class="has-sub"> <a href="dashboard/main/index.html"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a>
                         <ul>
-                            <li> <a href="{{ url('/') }}/members"><span class="title">Members</span></a> </li>
-                            <li> <a href="dashboard/main-2/index.html"><span class="title">Dashboard 2</span></a> </li>
-                            <li> <a href="dashboard/main-3/index.html"><span class="title">Dashboard 3</span></a> </li>
-                            <li class="has-sub"> <a href="skins/black/index.html"><span class="title">Skins</span></a>
+                            <li> <a href="{{ url('/') }}/members"><span class="title">User Members</span></a> </li>
+                            <li class="has-sub"> <a href="skins/black/index.html"><span class="title">My Projects</span></a>
                                 <ul>
-                                    <li> <a href="skins/black/index.html"><span class="title">Black Skin</span></a> </li>
-                                    <li> <a href="skins/white/index.html"><span class="title">White Skin</span></a> </li>
-                                    <li> <a href="skins/purple/index.html"><span class="title">Purple Skin</span></a> </li>
-                                    <li> <a href="skins/cafe/index.html"><span class="title">Cafe Skin</span></a> </li>
-                                    <li> <a href="skins/red/index.html"><span class="title">Red Skin</span></a> </li>
-                                    <li> <a href="skins/green/index.html"><span class="title">Green Skin</span></a> </li>
-                                    <li> <a href="skins/yellow/index.html"><span class="title">Yellow Skin</span></a> </li>
-                                    <li> <a href="skins/blue/index.html"><span class="title">Blue Skin</span></a> </li>
-                                    <li> <a href="skins/facebook/index.html"><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a> </li>
+                                    <li> <a href=""><span class="title">Picture Download</span></a> </li>
+                                    <li> <a href=""><span class="title">Account Details</span></a> </li>
+                                    <li> <a href=""><span class="title">Account Details</span></a> </li>
+                                    <li> <a href=""><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a> </li>
                                 </ul>
                             </li>
                             <li> <a href="dashboard/highlights/index.html"><span class="title">What's New</span><span class="badge badge-success badge-roundless">v2.0</span></a> </li>

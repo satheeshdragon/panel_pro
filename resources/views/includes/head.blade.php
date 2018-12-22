@@ -14,4 +14,5 @@
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/neon-theme.css" id="style-resource-6">
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/neon-forms.css" id="style-resource-7">
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/custom.css" id="style-resource-8">
+    <link rel="stylesheet" href="{{ url('/') }}/assets/css/skins/black.css" id="style-resource-9">
     <script src="{{ url('/') }}/assets/js/jquery-1.11.3.min.js"></script>
