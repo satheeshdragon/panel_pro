@@ -22,3 +22,10 @@
     <!-- Demo Settings -->
     <script src="assets/js/neon-demo.js" id="script-resource-18"></script>
     <script src="assets/js/neon-skins.js" id="script-resource-19"></script>
+
+    <link rel="stylesheet" href="assets/js/datatables/datatables.css" id="style-resource-1">
+    <link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css" id="style-resource-2">
+    <link rel="stylesheet" href="assets/js/select2/select2.css" id="style-resource-3">
+    <script src="assets/js/datatables/datatables.js" id="script-resource-8"></script>
+    <script src="assets/js/select2/select2.min.js" id="script-resource-9"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

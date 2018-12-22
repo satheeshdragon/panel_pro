@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     public function get_members(){
-    	// $members = DB::select('select * from members')->toArray();
     	$members = DB::table('members')->get()->toArray();
     	return $members;
     }
@@ -16,4 +15,25 @@ class Member extends Model
     	$users = DB::select('select * from users');
     	return $users;
     }
+
+    public function add_users($values){
+    	$users 	= DB::table('users')->insert($values);
+    	$id 	= DB::getPdo()->lastInsertId();;
+    	return $id;
+    }
+
+    public function update_users($data,$id){
+    	$users 	= DB::table('users')->where('id', $id)->update($data);
+    	$id 	= DB::getPdo()->lastInsertId();;
+    	return $id;
+    }
+
+    
+
+    public function destroy_users($id)
+    {
+    	DB::table('users')->delete($id);
+    }
+
+
 }
