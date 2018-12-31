@@ -14,7 +14,12 @@
                 <input type="text" class="form-control" name="form[name]" data-validate="required" data-message-required="This is custom message for required field." placeholder="Required Field"> </div>
             <div class="form-group">
                 <label class="control-label">Email Field</label>
-                <input type="text" class="form-control" name="form[email]" data-validate="email" placeholder="Email Field"> </div>
+                <input type="text" class="form-control" name="form[email]" data-validate="email" placeholder="Email Field"> 
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password Field</label>
+                <input type="text" class="form-control" name="form[password]"  placeholder="xxxx"> 
+            </div>
             
             <div class="form-group">
                 <button type="submit" class="btn btn-success">Validate</button>
@@ -31,6 +36,7 @@
                         <th>No</th>
                         <th>Name</th>
                         <th>Data</th>
+                        <th>Password</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +45,7 @@
                             <td class="center"><?php  echo $key; ?></td>
                             <td class="center"><?php  echo($value->name); ?></td>
                             <td class="center"><?php  echo($value->email); ?></td>
+                            <td class="center"><?php  echo($value->password); ?></td>
                         </tr>                        
                     <?php endforeach ?>
                 </tbody>
@@ -47,6 +54,8 @@
                         <th>Count</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Password</th>
+
                     </tr>
                 </tfoot>
             </table>
@@ -124,6 +133,7 @@
                         <th>No</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Password</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -137,8 +147,9 @@
                             <td class="center"><?php  echo $key; ?></td>
                             <td class="center"><?php  echo($value->name); ?></td>
                             <td class="center"><?php  echo($value->email); ?></td>
+                            <td class="center"><?php  echo($value->password); ?></td>
                             <td>
-                            <a class="btn btn-default btn-sm btn-icon icon-left" onclick="edit_data('<?php  echo ($value->id); ?>','<?php  echo($value->name); ?>','<?php  echo($value->email); ?>')"> <i class="entypo-pencil"></i> Edit
+                            <a class="btn btn-default btn-sm btn-icon icon-left" onclick="edit_data('<?php  echo ($value->id); ?>','<?php  echo($value->name); ?>','<?php  echo($value->email); ?>','<?php  echo($value->password); ?>')"> <i class="entypo-pencil"></i> Edit
                             </a>
                             <a class="btn btn-danger btn-sm btn-icon icon-left" onclick="delete_data(<?php  echo($value->id); ?>);"> <i class="entypo-cancel"></i> Delete
                             </a>
@@ -162,7 +173,7 @@
                     <div class="row">
                         @csrf
                         <div class="col-md-6">
-                            <input type="text" name="this_id" class="data_id" value="">
+                            <input type="hidden" name="this_id" class="data_id" value="">
                             <div class="form-group">
                                 <label for="field-1" class="control-label">Name</label>
                                 <input type="text" class="form-control data_name" name="member[name]" id="field-1" placeholder="John"> </div>
@@ -171,6 +182,12 @@
                             <div class="form-group">
                                 <label for="field-2" class="control-label">Email</label>
                                 <input type="text" class="form-control data_email" name="member[email]" id="field-2" placeholder="Doe@gmail.com"> </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="field-2" class="control-label">Password</label>
+                                <input type="text" class="form-control data_password" name="member[password]" id="field-2" placeholder="Doe@gmail.com"> </div>
                         </div>
                     </div>
                                        
@@ -207,10 +224,11 @@
 
 
 <script>
-    function edit_data(id,name,email){
+    function edit_data(id,name,email,password){
         $('.data_id').val(id);
         $('.data_name').val(name);
         $('.data_email').val(email);
+        $('.data_password').val(password);
         jQuery('#modal-6').modal('show', {backdrop: 'static'});
     }
 

@@ -24,3 +24,10 @@ Route::resource('members','MemberController');
 Route::post('members/create','MemberController@create');
 Route::post('members/destroy','MemberController@destroy');
 Route::post('members/update','MemberController@update');
+
+
+// Login
+Route::resource('login','LoginController');
+Route::post('login/check','LoginController@check');
+
+

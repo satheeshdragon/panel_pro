@@ -22,7 +22,7 @@ class MemberController extends Controller
 
     public function create(Request $request)
     {
-    	   $name = $request->input('form');
+    	     $name = $request->input('form');
            $id   = $this->mem->add_users($name);
            Session::flash('message', 'Inserted SuccessFully'); 
            return redirect()->action('MemberController@index');

@@ -20,6 +20,7 @@
                     <li class="has-sub"> <a href="dashboard/main/index.html"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a>
                         <ul>
                             <li> <a href="{{ url('/') }}/members"><span class="title">User Members</span></a> </li>
+                            <li> <a href="{{ url('/') }}/login"><span class="title">Login Page</span></a> </li>
                             <li class="has-sub"> <a href="skins/black/index.html"><span class="title">My Projects</span></a>
                                 <ul>
                                     <li> <a href=""><span class="title">Picture Download</span></a> </li>
